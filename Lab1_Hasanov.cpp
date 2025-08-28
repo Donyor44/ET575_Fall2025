@@ -28,18 +28,34 @@ int main() {
     float distance = 5.63;
     int number = 8;
 
-    cout <<"Given symbol = "<<sym<< endl;
-    cout <<"Given number ="<<number<< endl;
+    cout <<"Given symbol = "<< sym << endl;
+    cout <<"Given number = "<< number << endl;
 
-     cout << "-------- EXERCISE -------" << endl;
-     // declare variables
+    cout << "-------- EXERCISE -------" << endl;
+    // declare variables
+    string country;   // you forgot this one
+    char gender;
+    int zipcode;
+    double rate;
 
-     // collect data
+    // collect data
+    cout << "Enter your country: ";
+    cin >> country;
 
-     //print the result
+    cout << "Enter your gender (f for female, m for male, o for others): ";
+    cin >> gender;
 
+    cout << "Enter your zip code: ";
+    cin >> zipcode;
 
+    cout << "Enter your tax rate (with decimal): ";
+    cin >> rate;
+
+    // print the result
+    cout << "\nEntered country:\t" << country << endl;
+    cout << "Selected gender:\t" << gender << endl;
+    cout << "Zip code:\t\t" << zipcode << endl;
+    cout << "Tax rate:\t\t" << rate << endl;
 
     return 0;
 }
-
